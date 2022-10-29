@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right,#aa22ff, #beaded, #facade);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page-main {
+    background: rgba(255, 255, 255, 0.5);
+    width: 450px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    padding: 4rem;
+}
+
+.login-page-logo img {
+    width: 80px;
+    height: 80px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.login-page-logo, .login-page-header,
+.login-page-footer {
+    text-align: center;
+}
+
+.login-page-header {
+    padding: 20px 0;
+}
+
+.login-page-header h1 {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.login-page-form {
+    padding-bottom: 10px;
+}
+
+.login-page-form .form-item {
+    padding: 5px 0;
+}
+
+.login-page-form .form-item input {
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.login-page-form .form-item input[type=text] {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+   
+.login-page-other {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.login-page-other .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#rememberme , label {
+    cursor: pointer;
+}
+
+button {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
+}
+
+.register {
+    padding-top: 20px;
+    display: flex;
+}
+
+.register p , a {
+    padding: 0 10px;
+}
+
+.login-page-footer {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.fa:hover {
+    opacity: .7;
+}
+
+.fa-facebook {
+    background: #4267B2;
+    color: #ffffff;
+}
+
+.fa-discord {
+    background: #5b73c7;
+    color: #ffffff;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 0;
+    }
+    .login-page-main {
+        width: 280px;
+        padding: 2rem;
+    }
+}
